@@ -70,11 +70,25 @@
     $aname = 'Sasha';
     $bname = 'Yakovenko';
     echo $aname .' '. $bname;// конкатенация
+    echo '<hr>';
 
  //  + - * / %
  
- 
- 
+ echo 5 + 10;
+ echo '<br>';
+ echo 5 * 5;
+ echo '<br>';
+ echo 10 - 8;
+ echo '<br>';
+ echo 100 / 5;
+ echo '<br>';
+ echo 1080 % 2; //Деление по модулю
+ echo '<br>';
+
+ $h = 120;
+ $j = 180;
+ echo 'Ответ: ' . ($h + $j);
+
 ?>
 </body>
 </html>
