@@ -13,6 +13,9 @@
     echo 'To day is ';
     echo date('d.m.y h:i');
     echo '<br/>';
+
+//Переменные
+
     $my_variable = 100; // integer
     echo '<hr>';
     echo $my_variable;
@@ -21,6 +24,7 @@
     $b=14.2; //float
     $c='Howdy Ho!'; //string, str
 
+//Массивы
 
     $e=array(1, 2, 3, 4, 5);
     echo $a;
@@ -72,7 +76,7 @@
     echo $aname .' '. $bname;// конкатенация
     echo '<hr>';
 
- //  + - * / %
+ //  Арифметические операции  + - * / %
  
  echo 5 + 10;
  echo '<br>';
@@ -88,7 +92,57 @@
  $h = 120;
  $j = 180;
  echo 'Ответ: ' . ($h + $j);
+ echo '<hr>';
 
+ // Условие <, >, <=, >=, ==, !=
+
+ $weather = 'ясно'; 
+ if($weather == 'снег') {
+     echo 'Погода плохая, лучше никуда не ехать.';
+}
+
+if( $weather == 'дождь') {
+    echo 'Дождливая погода.';
+}
+
+if( $weather == 'ясно') {
+    echo 'Погода отличная!!!';
+}
+
+if( $weather == 'облачно') {
+    echo 'Погода может испортиться.';
+};
+echo '<br>';
+
+$age = 35;
+
+if( $age < 18) {
+    echo 'Вам нельзя!';
+}
+
+
+if( $age >= 18) {
+    echo 'Добро пожаловать!!!';
+}
+echo '<br>';
+
+$key = 1300;
+ 
+if( $key != 300) {
+    echo 'Это не 300';
+} else {
+    echo 'Это 300';
+}
+echo '<br>';
+
+$rname = 'Александр'; // and, or
+$rage = 3;
+
+if( $rname != 'Александр' and $rage <35){
+    echo 'Вам сюда нельзя';
+} else {
+    echo 'Привет!!!';
+}
 ?>
 </body>
 </html>
