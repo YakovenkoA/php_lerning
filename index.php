@@ -143,6 +143,51 @@ if( $rname != 'Александр' and $rage <35){
 } else {
     echo 'Привет!!!';
 }
+echo '<hr>';
+
+// Циклы for, while, foreach
+
+for( $i = 1; $i <= 10; $i++) // for
+{
+    echo $i;
+    if( $i % 2 == 0) // Условие (дополнительно)
+    {
+        echo ' - Число четное' . '<br>';
+    }
+    else
+     {
+        echo ' - Число не четное' . '<br>';
+    }
+}
+
+$test = 10;
+while( $test <= 15) // Пока условие выполняется
+{
+    echo 'Тест ' . $test. '<br>';
+    $test++;
+}
+
+$names = array(
+    'Jonny',
+    'Abraham',
+    'Wisker',
+    'Walker',
+    'Alex'
+);
+foreach( $names as $value) // Вывести все имена
+{
+    echo $value . '<br>';
+}
+
+$numbers = array(5, 10, 15, 20);
+foreach( $numbers as $num)  // Вывести все числа и квадраты чисел
+{
+    echo 'Квадрат числа ' . $num . ': ' 
+    . ($num * $num) . '<br>';
+}
+echo '<hr>';
+
+
 ?>
 </body>
 </html>
